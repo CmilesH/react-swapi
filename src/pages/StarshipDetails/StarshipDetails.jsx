@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getDetails } from '../../services/sw-api';
+import { Pilots } from '../../Components/Pilots/Pilots';
 
 
 const StarshipDetails = () => {
@@ -18,6 +19,8 @@ const StarshipDetails = () => {
         <div id='ship-card'>
             <h2>NAME: {starshipDetails.name}</h2>
             <h2>MODEL: {starshipDetails.model}</h2>
+
+            <h2>PILOTS: <Pilots pilots={starshipDetails.pilots}/></h2>
             <a href='/'><h2>Return to Starship list</h2></a>
         </div>
         :
@@ -26,7 +29,8 @@ const StarshipDetails = () => {
         </>
         }
     </>
-   );
+    
+  )
 }
- 
+
 export default StarshipDetails;

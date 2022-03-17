@@ -9,6 +9,9 @@ const StarshipList = () => {
     getAllStarships()
     .then(starshipData => setStarshipList(starshipData.results))
   }, [])
+  
+
+
   return (
     <>
     <header>Star Wars Starships</header>
@@ -18,15 +21,17 @@ const StarshipList = () => {
       {starshipList.map((starship) => (
         
         <>
-        <Link
-        id='ships'
+          <Link
+          id='ships'
           to='/starship'
           state={{starship}}
           key={starship.name}
           >
           {starship.name}
           </Link><br />
-          </>
+        
+        </>
+      
       
       ))}
       </>

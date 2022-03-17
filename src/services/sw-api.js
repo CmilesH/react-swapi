@@ -9,3 +9,4 @@ export function getDetails(apiUrl) {
   return fetch(`${apiUrl}`)
   .then(res => res.json())
 }
+  
