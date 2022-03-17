@@ -13,9 +13,8 @@
   }
 }
 
-.App-header {
+header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +23,37 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#ships{
+  background-color: goldenrod;
+  width: 200px;
+  height: 150px;
+  padding: 5px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 150px;
+  color: black;
+  text-decoration:solid;
+}
+
+#ship-card{
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(69, 142, 72);
+  width: 400px;
+  margin: 50px;
+}
+
+h2{
+  border-bottom: solid;
+  text-decoration: solid;
+  color: black;
 }

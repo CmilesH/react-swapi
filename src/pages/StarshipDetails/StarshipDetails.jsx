@@ -15,15 +15,14 @@ const StarshipDetails = () => {
   return ( 
     <>
       {StarshipDetails.name ?
-        <div>
-          <h3>Starship Deets</h3>
-            <h2>Name: {starshipDetails.name}</h2>
-            <h2>Model: {starshipDetails.model}</h2>
-            <a href='/'><h2>RETURN</h2></a>
+        <div id='ship-card'>
+            <h2>NAME: {starshipDetails.name}</h2>
+            <h2>MODEL: {starshipDetails.model}</h2>
+            <a href='/'><h2>Return to Starship list</h2></a>
         </div>
         :
         <>
-        <h2 className='loading'>Loading Starship Details...</h2>
+        <h3 className='loading'>Loading Starship Details...</h3>
         </>
         }
     </>

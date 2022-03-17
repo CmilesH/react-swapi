@@ -12,20 +12,22 @@ const StarshipList = () => {
   return (
     <>
     <header>Star Wars Starships</header>
+    <div id='body'>
       {starshipList.length ?
       <>
       {starshipList.map((starship) => (
-      <div key={starship.index}>
-
+        
+        <>
         <Link
+        id='ships'
           to='/starship'
           state={{starship}}
           key={starship.name}
           >
           {starship.name}
           </Link><br />
-
-      </div>
+          </>
+      
       ))}
       </>
       :
@@ -33,6 +35,7 @@ const StarshipList = () => {
       <h2>Getting Starships..</h2>
       </>}
       
+      </div>
     </>  
 
   );
